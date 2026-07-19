@@ -4,6 +4,23 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   
+  // --- Theme Switcher Option ---
+  const themeSwitchBtn = document.getElementById('theme-switch-btn');
+  const savedTheme = localStorage.getItem('theme-preference');
+  
+  if (savedTheme === 'blue') {
+    document.body.classList.add('theme-blue');
+  }
+
+  themeSwitchBtn.addEventListener('click', () => {
+    document.body.classList.toggle('theme-blue');
+    if (document.body.classList.contains('theme-blue')) {
+      localStorage.setItem('theme-preference', 'blue');
+    } else {
+      localStorage.setItem('theme-preference', 'cyberpunk');
+    }
+  });
+  
   // --- Header Scroll Effect ---
   const header = document.querySelector('header');
   window.addEventListener('scroll', () => {

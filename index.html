@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-Day Web Development Workshop | WISDOM STUDENTS & Anti-Gravity</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Join the ultimate 3-Day Web Development Workshop by WISDOM STUDENTS in association with Anti-Gravity. Learn HTML, CSS, and JavaScript, and build your own website from scratch. Register today!">
+  <meta name="keywords" content="web development, HTML, CSS, JavaScript, coding workshop, WISDOM STUDENTS, Anti-Gravity, learn coding, frontend development">
+  <meta name="author" content="WISDOM STUDENTS">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- FontAwesome Icons for modern styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION BAR
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <div class="logo-icon">W</div>
+        <span>WISDOM</span>STUDENTS
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#schedule" class="nav-link">Schedule</a></li>
+        <li><a href="#faq" class="nav-link">FAQs</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      
+      <!-- Mobile hamburger toggle -->
+      <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Content Area -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <i class="fa-solid fa-bolt neon-text-cyan"></i> WISDOM STUDENTS × ANTI-GRAVITY PRESENTS
+          </div>
+          <h1 class="hero-title">
+            Master Frontend
+            <span>Web Development</span>
+            in 3 Days.
+          </h1>
+          <p class="hero-subtitle">
+            An intensive, hands-on workshop designed to take you from a complete beginner to building and deploying your first live website. No prior coding experience required.
+          </p>
+          <div class="hero-actions">
+            <a href="#register-modal" class="btn btn-primary open-register-modal" id="hero-cta-register">
+              Register Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn btn-secondary" id="hero-cta-learn">
+              Learn More
+            </a>
+          </div>
+          
+          <!-- Quick stats/details -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>3 Days</h3>
+              <p>Live Sessions</p>
+            </div>
+            <div class="stat-item">
+              <h3>1 Live</h3>
+              <p>Project Built</p>
+            </div>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Free & Open</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Laptop/Desktop Mockup Graphic -->
+        <div class="hero-graphic">
+          <div class="graphic-bg"></div>
+          <div class="code-window glass-panel">
+            <div class="window-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-content">
+              <p class="code-comment">// Learn core web technologies</p>
+              <p><span class="code-keyword">const</span> <span class="neon-text-cyan">workshop</span> = {</p>
+              <p>&nbsp;&nbsp;days: <span class="code-string">3</span>,</p>
+              <p>&nbsp;&nbsp;topics: [<span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"JavaScript"</span>],</p>
+              <p>&nbsp;&nbsp;outcomes: <span class="code-string">"A beautiful, deployed website!"</span>,</p>
+              <p>&nbsp;&nbsp;organizedBy: <span class="code-string">"WISDOM STUDENTS"</span>,</p>
+              <p>&nbsp;&nbsp;poweredBy: <span class="code-string">"Anti-Gravity"</span></p>
+              <p>};</p>
+              <br>
+              <p><span class="code-keyword">function</span> <span class="neon-text-blue">startCoding</span>() {</p>
+              <p>&nbsp;&nbsp;console.log(<span class="code-string">"Hello, World! 🚀"</span>);</p>
+              <p>}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT THE WORKSHOP SECTION
+       ========================================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">THE CURRICULUM</span>
+        <h2 class="section-title">What You'll Learn</h2>
+        <p class="section-desc">We've structured this workshop to focus strictly on modern standards and core principles, cutting through the noise to get you coding fast.</p>
+      </div>
+      
+      <div class="about-grid">
+        <!-- Card 1: HTML -->
+        <div class="about-card glass-panel">
+          <div class="about-card-icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3>1. HTML5 Structure</h3>
+          <p>Learn the skeletal structure of the modern web. Master semantic markup, SEO best practices, page hierarchy, and clean structure to make your web elements highly accessible and organized.</p>
+        </div>
+        
+        <!-- Card 2: CSS -->
+        <div class="about-card glass-panel">
+          <div class="about-card-icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h3>2. CSS3 & Responsiveness</h3>
+          <p>Style your web pages with modern layout systems like CSS Grid and Flexbox. Design responsive components that scale flawlessly from mobile screens to massive high-res desktop displays.</p>
+        </div>
+        
+        <!-- Card 3: JS -->
+        <div class="about-card glass-panel">
+          <div class="about-card-icon">
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <h3>3. JavaScript Magic</h3>
+          <p>Inject life and interactivity into your website. Understand the Document Object Model (DOM), handle user events, trigger custom animations, and write dynamic scripting for modern UI/UX workflows.</p>
+        </div>
+        
+        <!-- Full-width Card: Deployment -->
+        <div class="about-card glass-panel">
+          <div class="about-card-icon">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+          </div>
+          <div>
+            <h3>From Scratch to Live Server</h3>
+            <p style="margin-top: 0.5rem;">The workshop ends with a live build. We won't just keep the code on your local computer; we will show you how to host and deploy your newly designed site onto a professional, public cloud service (Netlify / Vercel / GitHub Pages) so you can share it instantly with the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LIVE SCHEDULE SECTION
+       ========================================== -->
+  <section id="schedule" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">ROADMAP</span>
+        <h2 class="section-title">3-Day Live Schedule</h2>
+        <p class="section-desc">A detailed daily breakdown of topics, exercises, and projects. Click on the tabs below to explore each day's agenda.</p>
+      </div>
+
+      <!-- Day Switching Tabs -->
+      <div class="schedule-tabs">
+        <button class="tab-btn active" data-day="1" id="tab-day1">Day 1: Structuring</button>
+        <button class="tab-btn" data-day="2" id="tab-day2">Day 2: Styling</button>
+        <button class="tab-btn" data-day="3" id="tab-day3">Day 3: Interactivity</button>
+      </div>
+
+      <!-- Schedule Timelines -->
+      <div class="schedule-content">
+        
+        <!-- DAY 1 PANEL -->
+        <div class="schedule-panel active" id="day-1">
+          <div class="timeline">
+            <!-- Event 1 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">10:00 AM - 11:30 AM</span>
+                <h4>Introduction & Setup</h4>
+                <p>Welcome address by WISDOM STUDENTS and introduction to Anti-Gravity concepts. Setting up our development environment (Visual Studio Code, extensions, and workspace files).</p>
+              </div>
+            </div>
+            
+            <!-- Event 2 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">11:45 AM - 01:15 PM</span>
+                <h4>Understanding HTML Tags & Semantics</h4>
+                <p>An introduction to page layouts: headers, sections, articles, tables, lists, and semantic tags. Structuring the prototype of our workshop landing page.</p>
+              </div>
+            </div>
+            
+            <!-- Event 3 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">02:00 PM - 04:00 PM</span>
+                <h4>Hands-On Lab: HTML Page Structure</h4>
+                <p>Building our very first basic html structure from scratch. Students will create forms, inputs, navigation, and embed media files correctly.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 2 PANEL -->
+        <div class="schedule-panel" id="day-2">
+          <div class="timeline">
+            <!-- Event 1 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">10:00 AM - 11:30 AM</span>
+                <h4>CSS Core Concepts & Selectors</h4>
+                <p>Introduction to the CSS Box Model, specificity, inline vs. external styles, custom fonts, and applying colors, borders, margins, and padding variables.</p>
+              </div>
+            </div>
+            
+            <!-- Event 2 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">11:45 AM - 01:15 PM</span>
+                <h4>Modern Layouts: Flexbox and CSS Grid</h4>
+                <p>Designing modern page layouts. Stacking elements vertically on mobile and spreading them horizontally on desktop using Flexbox properties and Grid tracks.</p>
+              </div>
+            </div>
+            
+            <!-- Event 3 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">02:00 PM - 04:00 PM</span>
+                <h4>Media Queries & Mobile-First Styling</h4>
+                <p>Applying custom media breakpoints. Designing smooth typography scaling, hiding/showing navigation bars, and making forms fluidly resize for smartphones.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DAY 3 PANEL -->
+        <div class="schedule-panel" id="day-3">
+          <div class="timeline">
+            <!-- Event 1 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">10:00 AM - 11:30 AM</span>
+                <h4>Introduction to JS & DOM Manipulation</h4>
+                <p>Understanding variables, arrays, simple event listeners, click handlers, and dynamically updating texts or classes within the HTML page via vanilla JavaScript.</p>
+              </div>
+            </div>
+            
+            <!-- Event 2 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">11:45 AM - 01:15 PM</span>
+                <h4>Making Interactive Components</h4>
+                <p>Coding components like an interactive mobile menu drawer, sliding FAQ accordions, and custom modal windows for registration validation.</p>
+              </div>
+            </div>
+            
+            <!-- Event 3 -->
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-card glass-panel">
+                <span class="timeline-time">02:00 PM - 04:00 PM</span>
+                <h4>Live Deployment Workshop</h4>
+                <p>Taking our fully styled, interactive landing page, committing it, and deploying it live on a web server in real-time. Project wrap-up and certification guidelines.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ SECTION
+       ========================================== -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">HELP CENTER</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Have queries? We've compiled quick answers to the most common questions asked about this workshop.</p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item glass-panel">
+          <div class="faq-question" id="faq-q1">
+            Who is this workshop for?
+            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              This workshop is tailored specifically for beginners with absolute zero programming background, as well as students looking to brush up on their fundamental concepts in modern HTML, CSS layouts, and simple JavaScript interactivity.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item glass-panel">
+          <div class="faq-question" id="faq-q2">
+            Are there any prerequisites or software required?
+            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              All you need is a laptop (Windows, Mac, or Linux) with an active internet connection and a modern browser (Google Chrome or Microsoft Edge). We will help you set up Visual Studio Code (a free text editor) on Day 1.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item glass-panel">
+          <div class="faq-question" id="faq-q3">
+            Is the workshop certified?
+            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              Yes! All participants who successfully complete the 3-day roadmap and submit their deployed live project links will receive a verified certificate of completion co-issued by WISDOM STUDENTS and Anti-Gravity.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item glass-panel">
+          <div class="faq-question" id="faq-q4">
+            How much does the workshop cost?
+            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              This workshop is entirely sponsored by WISDOM STUDENTS in association with Anti-Gravity. Registration is 100% free, but seats are strictly limited to ensure personal mentoring for all attendees.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT US SECTION
+       ========================================== -->
+  <section id="contact" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">GET IN TOUCH</span>
+        <h2 class="section-title">Contact WISDOM STUDENTS</h2>
+        <p class="section-desc">Have a specific question, interested in partnerships, or having troubles registering? Drop us a message.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info / Details -->
+        <div class="contact-info">
+          <h3 class="contact-title">Let's Connect</h3>
+          <p class="contact-text">
+            For support regarding registrations, certificates, or joining the live webinar links, reach out directly via these channels.
+          </p>
+          
+          <div class="contact-details">
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-item-info">
+                <h4>Email Support</h4>
+                <p><a href="mailto:support@wisdomstudents.org">support@wisdomstudents.org</a></p>
+              </div>
+            </div>
+            
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-item-info">
+                <h4>Phone / Whatsapp</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-item-info">
+                <h4>WISDOM STUDENTS Tech Hub</h4>
+                <p>Tech Park Phase II, Silicon City, IN</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form glass-panel">
+          <div id="contact-success-msg" class="form-success-msg">
+            <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully. We will get back to you shortly.
+          </div>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address *</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message *</label>
+              <textarea id="contact-message" class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="contact-submit-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER SECTION
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Branding -->
+        <div class="footer-branding">
+          <a href="#hero" class="footer-logo">
+            <span>WISDOM</span>STUDENTS
+          </a>
+          <p class="footer-desc">
+            Empowering the next generation of web developers with high-quality tech workshops and mentorship.
+          </p>
+          <div class="footer-assoc">
+            In Association with
+            <div class="footer-assoc-logos">
+              <span style="color: #ffffff; font-weight: 700; letter-spacing: 0.1em;">ANTI-GRAVITY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workshop links -->
+        <div class="footer-links-group">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Workshop</a></li>
+            <li><a href="#schedule">Schedule Timeline</a></li>
+            <li><a href="#faq">Help Center</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media handles -->
+        <div class="footer-links-group">
+          <h4>Connect with Us</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Stay updated on future events by following our social channels.</p>
+          <div class="footer-socials">
+            <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright and Bottom Credits -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 WISDOM STUDENTS. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       REGISTRATION POPUP MODAL
+       ========================================== -->
+  <div id="register-modal" class="modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content glass-panel">
+      <button class="modal-close" aria-label="Close Registration Modal">&times;</button>
+      
+      <h3 class="modal-title">Secure Your Seat</h3>
+      <p class="modal-desc">Fill in the details below to register for the 3-day live webinar. A link will be sent to your email.</p>
+      
+      <!-- Success Message Inside Modal -->
+      <div id="reg-success-msg" class="form-success-msg">
+        <i class="fa-solid fa-circle-check"></i> Registration Successful! Check your email inbox for confirmation details. See you on Day 1!
+      </div>
+
+      <!-- Registration Form -->
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="reg-name" class="form-label">Full Name *</label>
+          <input type="text" id="reg-name" class="form-control" placeholder="Jane Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email" class="form-label">Email Address *</label>
+          <input type="email" id="reg-email" class="form-control" placeholder="jane.doe@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-phone" class="form-label">Phone / WhatsApp Number *</label>
+          <input type="tel" id="reg-phone" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+
+        <div class="form-group">
+          <label for="reg-experience" class="form-label">Coding Experience Level</label>
+          <select id="reg-experience" class="form-control">
+            <option value="beginner">Complete Beginner (No experience)</option>
+            <option value="intermediate">Some HTML/CSS knowledge</option>
+            <option value="advanced">Familiar with Javascript / building web apps</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;" id="reg-submit-btn">
+          Confirm Registration <i class="fa-solid fa-circle-check"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
